@@ -23,10 +23,10 @@ Resposta: <br>
 
 - **Utilizando Postman** <br>
 Descrição: Encurta uma Url dada utilizando postman, retorna a Url encurtada<br>
-Exemplo: <br>
+Exemplo: Utilize a opção POST e o método /encurtar adicionando um corpo json com o parâmetro "url" como na imagem abaixo <br>
 ![image](https://github.com/user-attachments/assets/c791101b-2540-4784-918c-45d497c1c9ee)
-<br>
-Resposta: <br>
+
+Resposta Esperada: <br>
 ![image](https://github.com/user-attachments/assets/f486eb1a-ec90-4774-bd73-ba05c57f26fe)
 <br>
 
