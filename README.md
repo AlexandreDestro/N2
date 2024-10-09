@@ -22,8 +22,11 @@ Resposta: <br>
 <br>
 
 - **Utilizando Postman** <br>
-Descrição: <br>
+Descrição: Encurta uma Url dada utilizando postman, retorna a Url encurtada<br>
 Exemplo: <br>
 ![image](https://github.com/user-attachments/assets/c791101b-2540-4784-918c-45d497c1c9ee)
 <br>
 Resposta: <br>
+![image](https://github.com/user-attachments/assets/f486eb1a-ec90-4774-bd73-ba05c57f26fe)
+<br>
+
