@@ -25,4 +25,17 @@ public class UrlService {
             throw new RuntimeException("Erro ao encurtar a URL: " + response.getStatusCode());
         }
     }
+    public String shortenUrlPost(String originalUrl) {
+        RestTemplate restTemplate = new RestTemplate();
+
+        String apiUrl = SHORTENER_API_URL + originalUrl;
+
+        ResponseEntity<String> response = restTemplate.exchange(apiUrl, HttpMethod.GET, null, String.class);
+
+        if (response.getStatusCode().is2xxSuccessful()) {
+            return (response.getBody());
+        } else {
+            throw new RuntimeException("Erro ao encurtar a URL: " + response.getStatusCode());
+        }
+    }
 }

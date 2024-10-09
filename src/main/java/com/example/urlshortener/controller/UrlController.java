@@ -1,5 +1,6 @@
 package com.example.urlshortener.controller;
 
+import com.example.urlshortener.model.UrlModel;
 import com.example.urlshortener.service.UrlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -31,9 +32,9 @@ public class UrlController {
     }
     //post json
     @PostMapping("/encurtar")
-    public ResponseEntity<String> shortenUrlPost(@RequestBody String originalUrl) {
+    public ResponseEntity<String> shortenUrlPost(@RequestBody UrlModel originalUrl) {
         try {
-            String shortenedUrl = urlShortenerService.shortenUrl(originalUrl);
+            String shortenedUrl = urlShortenerService.shortenUrlPost(originalUrl.getUrl());
             return ResponseEntity.ok(shortenedUrl);
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Erro ao encurtar a URL: " + e.getMessage());
